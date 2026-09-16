@@ -1,0 +1,59 @@
+%  PART A -- KNOWLEDGE BASE
+
+% ----------------------------------------------------------
+% course(CourseID, Title, Credits)
+course(csc110, 'Intro to Programming',          3).
+course(csc150, 'Discrete Mathematics',           3).
+course(csc220, 'Data Structures I',              3).
+course(csc230, 'Data Structures II',             3).
+course(csc270, 'Computer Organization',          3).
+course(csc315, 'Operating Systems',              3).
+course(csc340, 'Algorithms',                     3).
+course(csc360, 'Database Systems',               3).
+course(csc410, 'Software Engineering',           3).
+course(csc450, 'Computer Networks',              3).
+course(mat150, 'Calculus I',                     4).
+course(mat250, 'Calculus II',                    4).
+course(mat320, 'Linear Algebra',                 3).
+
+% ----------------------------------------------------------
+% prereq(CourseID, PrereqID)
+%   "CourseID requires PrereqID as an immediate prerequisite"
+
+prereq(csc220, csc110).
+prereq(csc220, mat150).
+prereq(csc230, csc220).
+prereq(csc270, csc220).
+prereq(csc315, csc230).
+prereq(csc315, csc270).
+prereq(csc340, csc230).
+prereq(csc340, mat250).
+prereq(csc360, csc230).
+prereq(csc410, csc340).
+prereq(csc450, csc315).
+prereq(mat250, mat150).
+prereq(mat320, mat150).
+
+% ----------------------------------------------------------
+% student(StudentID, Name)
+student(s001, 'Alice').
+student(s002, 'Bob').
+student(s003, 'Carol').
+
+% ----------------------------------------------------------
+% completed(StudentID, CourseID)
+%   Courses a student has already passed
+
+completed(s001, csc110).
+completed(s001, mat150).
+completed(s001, csc220).
+completed(s001, mat250).
+completed(s001, csc230).
+completed(s001, csc270).
+
+completed(s002, csc110).
+completed(s002, mat150).
+
+completed(s003, csc110).
+completed(s003, mat150).
+completed(s003, csc220).
