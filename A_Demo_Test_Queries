@@ -1,0 +1,12 @@
+1. person(alice).                                               --> Is alice a person?                                          // true/false --> true
+2. person(X).                                                   --> who are the people in the knowledge base?                   // use ; to get multiple answers    // false if no more solutions found
+3. available(alice, Day, Time).                                 --> what days and times is alice available?                     // use ; to get multiple answers    // false if no more solutions found
+4. available(Person, tuesday, 13).                              --> which people are available on tuesday at 13:00?             // use ; to get multiple answers    // false if no more solutions found
+5. everyone_available([alice,bob,charlie,diana], Day, Time).    --> what days and times is everyone available?                  // use ; to get multiple answers    // false if no more solutions found
+6. valid_room(blue, tuesday, 13).                               --> is the blue room valid (free, open, enough space)?          // true/false --> true
+7. find_meeting(Day, Time, Room).                               --> Find a meeting time & room that works for all staff         // use ; to get multiple answers    // false if no more solutions found
+8. early_meeting(Day, Time, Room).                              --> Find an early meeting time & room that works for all staff  // use ; to get multiple answers    // false if no more solutions found
+9. preferred_meeting(Day, Time, Room).                          --> Find a meeting time in a preferred room                     // use ; to get multiple answers    // false if no more solutions found
+10. show_people([alice,bob,charlie,diana]).                     --> display all people                                          //
+11. schedule_team.                                              --> find a meeting time for team, display info for meeting      //
+12. all_meetings.                                               --> find and display all possible meetings
