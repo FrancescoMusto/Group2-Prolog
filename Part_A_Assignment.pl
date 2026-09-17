@@ -119,7 +119,7 @@ can_take(StudentID, CourseID) :-
 %   Unifies EligibleList with all courses the student can take now.
 %
 %   ?- eligible_courses(s001, E).
-TODO: eligible_courses(StudentID, EligibleList) :-
+eligible_courses(StudentID, EligibleList) :-
 
 
 % TODO: missing_prereqs(+StudentID, +CourseID, -Missing)
